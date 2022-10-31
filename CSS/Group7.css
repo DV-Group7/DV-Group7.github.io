@@ -39,10 +39,6 @@ header div {
 
 ul {
     padding-inline-start: 0px;
-}
-
-header div h3 ul li {
-    padding: 2px;
     list-style: none;
 }
 
