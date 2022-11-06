@@ -1,0 +1,10 @@
+.all-charts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-charts>div {
+    padding: 1rem;
+}
