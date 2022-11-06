@@ -1,0 +1,134 @@
+body {
+    background-color: rgba(0, 0, 0, .05);
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    /*background-color: rgb(219, 231, 219) ; /*rgb(169, 221, 180)*/
+    /*rgb(169, 221, 180)*/
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Roboto Slab", sans-serif;
+    text-align: center;
+}
+
+h1 {
+    max-width: fit-content;
+    padding: 5px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #7aa8b7;
+    border-radius: 6px;
+    outline: none;
+}
+
+h4,
+h5,
+h6 {
+    font-family: "Roboto Slab", sans-serif;
+}
+
+div.content {
+    padding-bottom: 3em;
+}
+
+section {
+    padding: 3em;
+    color: rgb(0, 0, 0);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 700px;
+}
+
+p,
+a {
+    font-family: "Fira Sans", sans-serif;
+    text-align: justify;
+}
+
+header p {
+    text-align: center;
+}
+
+header div {
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+ul {
+    padding-inline-start: 0px;
+    list-style: none;
+}
+
+li {
+    padding: .5rem;
+}
+
+.font-fira {
+    font-family: "Fira Sans", sans-serif;
+}
+
+.font-roboto {
+    font-family: "Roboto Slab", sans-serif
+}
+
+.button {
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #7aa8b7;
+    border-radius: 6px;
+    outline: none;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.tooltip {
+    position: fixed;
+    border: 1px solid;
+    border-radius: 5px;
+    opacity: 1 !important;
+    background-color: white;
+    transform: translate(7%, -7%) !important;
+    font-family: "Fira Sans", sans-serif;
+    padding: 5px !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    section {
+        min-width: 500px;
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0em;
+        padding-right: 0em;
+
+    }
+}
+
+.pt-5 {
+    padding-top: 5rem !important;
+}
+
+.pb-5 {
+    padding-bottom: 5rem !important;
+}
