@@ -1,111 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eco-Benefit Project</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans">
-    <link rel="stylesheet" type="text/css" href="/css/Group7.css">
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/vendor/css/robotoSlab.css">
+    <link rel="stylesheet" type="text/css" href="/vendor/css/firaSans.css">
+    <link rel="stylesheet" type="text/css" href="/css/ecoBenefit.css">
+    <script type="text/javascript" src="/vendor/js/d3.v7.min.js"></script>
+    <script type="text/javascript" src="/vendor/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/ecoBenefit.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Eco-Benefit Project</h1>
-        <h2>Group 7</h2>
-        <h3>
-            <ul>
-                <li>Elia Benvenuti</li>
-                <li>Alessio Distante</li>
-                <li>Valentina Lumbano</li>
-                <li>Hanna De Maria</li>
-                <li>Leonardo Delfino</li>
-            </ul>
-        </h3>
+    <header class="text-center my-3">
+        <h1 class="button mb-2">Eco-Benefit Project</h1>
+        <h2 class="mb-1">Group 7</h2>
+        <ul class="list-none font-bold mb-0">
+            <li>Elia Benvenuti</li>
+            <li>Alessio Distante</li>
+            <li>Valentina Lumbano</li>
+            <li>Hanna De Maria</li>
+            <li>Leonardo Delfino</li>
+        </ul>
     </header>
-    <div class="content">
-        <section class="s1">
-            <h3>INTRODUCTION</h3>
-            <p>
-                Since 1996, the municipality of Trento has been carrying out surveys of green areas and street trees in
-                the city. It is important to specify that the data reported dates back to censuses and surveys carried
-                out at different times. The surveys and updates of green areas are being completed and therefore the
-                data and gardens reported are still partial or do not entirely correspond to reality.<br><br>
-
-                The dataset contains a variety of information, which can be divided into two macro-categories: the first
-                category refers to the physical characteristics of individual trees, such as species, height, crown size
-                and position. The second, on the other hand, exploits precise methodologies that use the physical
-                characteristics of the tree to estimate secondary information such as carbon dioxide captured, pollution
-                removed, energy saved, and money saved.<br><br>
-
-                Our goal is to rework the dataset and develop a series of graphical representations of the data that
-                will allow for easier and faster reading of the findings.
-            </p>
-        </section>
-        <section class="s2">
-            <h3>FIRST ASSIGNMENT</h3>
-            <h4>HORIZONTAL BARCHART</h4>
-            <p>
-                First graph.
-                The following “BarChart” shows a ranking of the top 20 most common tree species in the territory and
-                their
-                corresponding quantity.
-                We find on the y-axis the names of the trees sorted in decreasing order by quantity and on the x-axis
-                their number.
-                It is possible to get additional information about a tree specie by moving the mouse over the
-                corresponding bar: a
-                text area is then shown with the numerical value of the selected tree's abundance and the average canopy
-                size.
-            </p>
-
-            <a class="button" href="/graph/graph1.html">Graph I</a>
-            <h4>HORIZONTAL STACKED BARCHART</h4>
-            <p>
-                Second graph.
-                The Stacked Bar Chart highlights the total number of trees in each neighborhood.
-                In particular, it differentiates for each neighborhood the amounts of trees that belong to the top 5
-                most common species
-                in the Trento area from the remaining species that are grouped together in a single category.
-                We find on the y-axis the names of the neighborhoods and on the x-axis the number of trees.
-            </p>
-            <a class="button" href="/graph/graph2.html">Graph II</a>
-            <h4>HORIZONTAL STACKED BARCHART WITH SMALL MULTIPLE</h4>
-            <p>
-                Third graph.
-                The "Stacked Bar Chart With Small Multiple" graph allows, for each neighborhood, to compare the top 5
-                most common tree species
-                in the area with all the remaining species (grouped all together in "Others").
-                On the y-axis we find the names of the neighborhoods.
-            </p>
-            <a class="button" href="/graph/graph3.html">Graph III</a>
-            <h4>HORIZONTAL STACKED BAR CHART WITH PERCENTAGE</h4>
-            <p>
-                Fourth graph.
-                The "Stacked bar chart 100%" shows the percentage present in each neighborhood of both the trees that
-                belong to the top 5 most
-                common species in the Trento area and the remaining species that are grouped together in a single
-                category.
-                We find on the y-axis the names of the neighborhoods while the x-axis shows the percentages.
-            </p>
-            <a class="button" href="/graph/graph4.html">Graph IV</a>
-            <h4>WAFFLE CHARTS</h4>
-            <p>
-                Fifth graph.
-                Multiple "Waffle chart" type graphs are shown, each representing a neighborhood, where only the top 5
-                most prevalent tree species
-                in the Trento area are considered.
-                For each chart, the various species are differentiated according to their percentage, allowing
-                comparison of the spread of each
-                species in each neighborhood.
-            </p>
-            <a class="button" href="/graph/graph5.html">Graph V</a>
-        </section>
-    </div>
+    <section class="section text-justify mb-3">
+        <h3 class="text-center">INTRODUCTION</h3>
+        <p class="mb-0">
+            Since 1996, the municipality of Trento has been carrying out surveys of green areas and street trees in
+            the city. It is important to specify that the data reported dates back to censuses and surveys carried
+            out at different times. The surveys and updates of green areas are being completed and therefore the
+            data and gardens reported are still partial or do not entirely correspond to reality.<br><br>
+            The dataset contains a variety of information, which can be divided into two macro-categories: the first
+            category refers to the physical characteristics of individual trees, such as species, height, crown size
+            and position. The second, on the other hand, exploits precise methodologies that use the physical
+            characteristics of the tree to estimate secondary information such as carbon dioxide captured, pollution
+            removed, energy saved, and money saved.<br><br>
+            Our goal is to rework the dataset and develop a series of graphical representations of the data that
+            will allow for easier and faster reading of the findings.
+        </p>
+    </section>
+    <section class="section text-justify mb-3">
+        <h3 class="text-center">FIRST ASSIGNMENT</h3>
+        <h4 class="mt-1">HORIZONTAL BARCHART</h4>
+        <p>
+            The following “Bar Chart” shows a ranking of the top 20 most common tree species in the territory and
+            their
+            corresponding quantity.
+            We find on the y-axis the names of the trees sorted in decreasing order by quantity and on the x-axis
+            their number.
+            It is possible to get additional information about a tree specie by moving the mouse over the
+            corresponding bar: a
+            text area is then shown with the numerical value of the selected tree's abundance and the average canopy
+            size.
+        </p>
+        <a class="button" href="/first-assignment/graph/graph1.html">Graph I</a>
+        <h4 class="mt-2">HORIZONTAL STACKED BARCHART</h4>
+        <p>
+            The "Stacked Bar Chart" highlights the total number of trees in each neighborhood.
+            In particular, it differentiates for each neighborhood the amounts of trees that belong to the top 5
+            most common species
+            in the Trento area from the remaining species that are grouped together in a single category.
+            We find on the y-axis the names of the neighborhoods and on the x-axis the number of trees.
+        </p>
+        <a class="button" href="/first-assignment/graph/graph2.html">Graph II</a>
+        <h4 class="mt-2">HORIZONTAL STACKED BARCHART WITH SMALL MULTIPLE</h4>
+        <p>
+            The "Stacked Bar Chart With Small Multiple" graph allows, for each neighborhood, to compare the top 5
+            most common tree species
+            in the area with all the remaining species (grouped all together in "Others").
+            On the y-axis we find the names of the neighborhoods.
+        </p>
+        <a class="button" href="/first-assignment/graph/graph3.html">Graph III</a>
+        <h4 class="mt-2">HORIZONTAL STACKED BAR CHART WITH PERCENTAGE</h4>
+        <p>
+            The "Stacked Bar Chart 100%" shows the percentage present in each neighborhood of both the trees that
+            belong to the top 5 most
+            common species in the Trento area and the remaining species that are grouped together in a single
+            category.
+            We find on the y-axis the names of the neighborhoods while the x-axis shows the percentages.
+        </p>
+        <a class="button" href="/first-assignment/graph/graph4.html">Graph IV</a>
+        <h4 class="mt-2">WAFFLE CHARTS</h4>
+        <p>
+            Multiple "Waffle Chart" type graphs are shown, each representing a neighborhood, where only the top 5
+            most prevalent tree species
+            in the Trento area are considered.
+            For each chart, the various species are differentiated according to their percentage, allowing
+            comparison of the spread of each
+            species in each neighborhood.
+        </p>
+        <a class="button" href="/first-assignment/graph/graph5.html">Graph V</a>
+    </section>
+    <section class="section text-justify mb-3">
+        <h3 class="text-center">SECOND ASSIGNMENT</h3>
+        <h4 class="mt-1">HISTOGRAM</h4>
+        <p>
+            The “Histogram” is a graph that is used to represent the distribution of a dataset, that is the frequency
+            with which values fall in intervals. In this case trees' height are related to the number of trees that
+            possess that height.
+            On the x-axis we find the height of the various trees and on the y-axis we find an integer value
+            representing the number of trees.
+        </p>
+        <a class="button" href="/second-assignment/graph/graph1.html">Graph I</a>
+        <h4 class="mt-2">BOXPLOT</h4>
+        <p>
+            A BoxPlot is a method for graphically demonstrating the locality, spread and skewness groups of
+            numerical data through their quartiles. In this case, the BoxPlot shows data of the trees' height.
+        </p>
+        <a class="button" href="/second-assignment/graph/graph2.html">Graph II</a>
+        <h4 class="mt-2">SCATTER PLOT</h4>
+        <p>
+            A “Scatter Plot” is a type of plot or mathematical diagram using Cartesian coordinates to display values for
+            typically two variables for a set of data. In this specific case, on
+            the x-axis we have the sizes of all the different trees in Trento, whereas on the y-axis we have the amount
+            of C02 absorbed by each tree.
+        </p>
+        <a class="button" href="/second-assignment/graph/graph3.html">Graph III</a>
+        <h4 class="mt-2">SCATTER PLOT SMALL MULTIPLE</h4>
+        <p>
+            Considering only the top 6 most populated tree types in Trento, 6 different scatter plots are displayed,
+            each one representing a different tree. Each plot is constructed in the following way: On the x-axis we
+            have all the sizes of the considered tree type, whereas on the y-axis we have the amount of C02 absorbed by
+            each tree of the specific tree type.
+        </p>
+        <a class="button" href="/second-assignment/graph/graph4.html">Graph IV</a>
+        <h4 class="mt-2">BUBBLE CHART</h4>
+        <p>
+            The "Bubble Chart" is a type of graph in which each entity represented is defined in terms of three distinct
+            numerical parameters so that they can be compared according to their size and location.
+            We find on the x-axis the tree size, on the y-axis the CO2 and at the end the bubble size represents the
+            canopy size.
+        </p>
+        <a class="button" href="/second-assignment/graph/graph5.html">Graph V</a>
+    </section>
 </body>
 
 </html>

@@ -1,0 +1,29 @@
+.display-flex,
+.single-container,
+.multi-container {
+    row-gap: 3rem;
+    column-gap: 5rem;
+}
+
+.multi-container {
+    column-gap: 0;
+}
+
+.container > svg {
+    padding: 0 1rem;
+}
+
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 3rem 1rem;
+}
+
+.legend {
+    padding-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    hr {
+        margin: 3rem 0;
+    }
+}
