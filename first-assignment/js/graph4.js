@@ -68,7 +68,8 @@ const object = {
             .attr('font-size', '15');
 
         xLabel.append('text')
-            .text(percentage ? 'Percentage' : 'Abundance');
+            .text(percentage ? 'Percentage' : 'Abundance')
+            .attr("y", 30);;
 
         // Color palette
         const color = getTreeColors(subgroups);
@@ -210,7 +211,7 @@ const object = {
 };
 
 $(document).ready(async function () {
-    object.rawData = await d3.csv('/first-assignment/csv/geo_data_trees_neighborhoods.csv');
+    object.rawData = await d3.csv('../csv/geo_data_trees_neighborhoods.csv');
 
     $(window).resize(function () {
         if (currentWidth !== window.innerWidth) {

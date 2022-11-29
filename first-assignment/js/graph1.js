@@ -61,10 +61,12 @@ const object = {
         // Add X label
         const xLabel = chart.append('g')
             .attr('class', 'x-label')
-            .attr('font-size', '15');
+            .attr('font-size', '15')
+            
 
         xLabel.append('text')
-            .text('Abundance [unit]');
+            .text('Abundance [unit]')
+            .attr("y", 30);
 
         // Color palette
         const color = d3.scaleSequential()
@@ -142,7 +144,7 @@ const object = {
 };
 
 $(document).ready(async function () {
-    object.rawData = await d3.csv('/first-assignment/csv/geo_data_trees_categories.csv');
+    object.rawData = await d3.csv('../csv/geo_data_trees_categories.csv');
 
     $(window).resize(function () {
         if (currentWidth !== window.innerWidth) {

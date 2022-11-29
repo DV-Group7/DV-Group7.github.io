@@ -88,7 +88,7 @@ const object = {
 };
 
 $(document).ready(async function () {
-    object.rawData = await d3.csv('/second-assignment/csv/geo_data_trees_list.csv');
+    object.rawData = await d3.csv('../csv/geo_data_trees_list.csv');
 
     $(window).resize(function () {
         if (currentWidth !== window.innerWidth) {

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Benefit Project</title>
+    <link rel="stylesheet" type="text/css" href="/vendor/css/robotoSlab.css">
+    <link rel="stylesheet" type="text/css" href="/vendor/css/firaSans.css">
+    <link rel="stylesheet" type="text/css" href="/css/ecoBenefit.css">
+    <link rel="stylesheet" type="text/css" href="../css/graph1.css">
+    <script type="text/javascript" src="/vendor/js/d3.v7.min.js"></script>
+    <script type="text/javascript" src="/vendor/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/ecoBenefit.js"></script>
+    <script type="text/javascript" src="../js/graph1.js"></script>
+</head>
+
+<body>
+    <header class="text-center my-3">
+        <h1 class="button mb-0">GRAPH I - HISTOGRAM</h1>
+    </header>
+    <div class="description">
+        <p>
+            The “Histogram” is a graph that is used to represent the distribution of a dataset, that is the frequency
+            with which values fall in intervals. In this case trees' height are related to the number of trees that
+            possess that height. <br>
+            On the x-axis we find the height of the various trees and on the y-axis we find an integer value
+            representing the number of trees.
+        </p>
+    </div>
+    <section class="text-center mb-3">
+        <div class="single-container mb-2"></div>
+        <div>
+            <label>Numero di bins:</label>
+            <input type="number" min="1" step="20" id="nBin">
+        </div>
+    </section>
+
+</body>
+
+</html>

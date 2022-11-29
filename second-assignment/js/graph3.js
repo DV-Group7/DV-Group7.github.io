@@ -62,7 +62,8 @@ const object = {
             .attr('font-size', '15');
 
         yLabel.append('text')
-            .text('Carbon storage [kg]');
+            .text('Carbon storage [kg]')
+            .attr("y", -30);;
 
         // Add X axis
         const x = d3.scaleLinear()
@@ -80,7 +81,8 @@ const object = {
             .attr('font-size', '15');
 
         xLabel.append('text')
-            .text('Height [m]');
+            .text('Height [m]')
+            .attr("y", 30);;
 
         // Tooltip timeout
         let timeout = null;
@@ -107,7 +109,7 @@ const object = {
                 .attr("r", dotSelectedSize);
 
             // Show tooltip
-            tooltip.html("Tree: " + d.Name + "<br> Carbon storage (kg): " + d.Carbon)
+            tooltip.html(`Tree: ${d.Name}<br> Carbon storage (kg): ${d.Carbon}`)
                 .style('display', 'block');
         };
 
@@ -133,7 +135,7 @@ const object = {
 
         // Color palette
         const color = function (d) {
-            return d3.interpolateWarm(subgroups.indexOf(d.Name) / subgroups.length);
+            return d3.interpolateRainbow(subgroups.indexOf(d.Name) / subgroups.length);
         };
 
         // Show the dots
@@ -169,7 +171,7 @@ const object = {
 };
 
 $(document).ready(async function () {
-    object.rawData = await d3.csv('/second-assignment/csv/geo_data_trees_list.csv');
+    object.rawData = await d3.csv('../csv/geo_data_trees_list.csv');
 
     $(window).resize(function () {
         if (currentWidth !== window.innerWidth) {

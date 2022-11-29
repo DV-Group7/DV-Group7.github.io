@@ -69,7 +69,8 @@ const object = {
             .attr('font-size', '15');
 
         yLabel.append('text')
-            .text('Carbon storage [kg]');
+            .text('Carbon storage [kg]')
+            .attr("y", -20);;
 
         // Add X axis
         const x = d3.scaleLinear()
@@ -87,7 +88,8 @@ const object = {
             .attr('font-size', '15');
 
         xLabel.append('text')
-            .text('Height [m]');
+            .text('Height [m]')
+            .attr("y", 20);;
 
         // Tooltip timeout
         let timeout = null;
@@ -104,7 +106,7 @@ const object = {
             removeTimeout();
 
             // Show tooltip
-            tooltip.html("Carbon storage (kg): " + d.Carbon + "<br/>Height (m): " + d.Height)
+            tooltip.html(`Carbon storage (kg): ${d.Carbon}<br/>Height (m): ${d.Height}`)
                 .style('display', 'block');
         };
 
@@ -157,7 +159,7 @@ const object = {
 };
 
 $(document).ready(async function () {
-    object.rawData = await d3.csv('/second-assignment/csv/geo_data_trees_list.csv');
+    object.rawData = await d3.csv('../csv/geo_data_trees_list.csv');
 
     $(window).resize(function () {
         if (currentWidth !== window.innerWidth) {

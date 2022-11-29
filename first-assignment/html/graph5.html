@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Benefit Project</title>
+    <link rel="stylesheet" type="text/css" href="/vendor/css/robotoSlab.css">
+    <link rel="stylesheet" type="text/css" href="/vendor/css/firaSans.css">
+    <link rel="stylesheet" type="text/css" href="/css/ecoBenefit.css">
+    <link rel="stylesheet" type="text/css" href="../css/graph5.css">
+    <script type="text/javascript" src="/vendor/js/d3.v7.min.js"></script>
+    <script type="text/javascript" src="/vendor/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/ecoBenefit.js"></script>
+    <script type="text/javascript" src="/vendor/js/numberToWords.min.js"></script>
+    <script type="text/javascript" src="../js/graph5.js"></script>
+</head>
+
+<body>
+    <header class="text-center my-3">
+        <h1 class="button mb-3">GRAPH V - WAFFLE CHARTS</h1>
+    </header>
+    <div class="description">
+        <p>
+            Multiple "Waffle Chart" type graphs are shown, each representing a neighborhood, where only the top 5
+            most prevalent tree species
+            in the Trento area are considered. <br>
+            For each chart, the various species are differentiated according to their percentage, allowing
+            comparison of the spread of each
+            species in each neighborhood.<br>
+            NB! The 'Sardagna' district was excluded from the representations as it does not contain any of the trees
+            considered below.
+        </p>
+    </div>
+    <section class="mb-3">
+        <div class="display-flex align-items-center justify-content-center">
+            <div class="list-neighborhoods"></div>
+            <div class="display-flex align-items-center justify-content-center single-container"></div>
+        </div>
+        <hr>
+        <div class="display-flex justify-content-center multi-container"></div>
+    </section>
+
+</body>
+
+</html>

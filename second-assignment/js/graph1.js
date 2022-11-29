@@ -14,6 +14,7 @@ const object = {
         const height = 600;
         const width = getElementWidth(selector);
 
+        // Fix the number of bins
         if (nBin < 1) {
             nBin = 1;
         }
@@ -47,7 +48,8 @@ const object = {
                 .attr('font-size', '15');
 
             yLabel.append('text')
-                .text('Abundance [unit]');
+                .text('Abundance [unit]')
+                .attr("y", -30);;
 
             xAxis = chart.append('g')
                 .attr('class', 'x-axis')
@@ -59,7 +61,8 @@ const object = {
                 .attr('font-size', '15');
 
             xLabel.append('text')
-                .text('Height [m]');
+                .text('Height [m]')
+                .attr("y", 30);;
 
             bars = chart.append('g')
                 .attr('class', 'bars');
@@ -98,7 +101,8 @@ const object = {
         xAxis.call(d3.axisBottom(x).tickSizeOuter(0));
 
         // Show the bars
-        bars.selectAll('rect').data(bins)
+        bars.selectAll('rect')
+            .data(bins)
             .join('rect')
             .attr('fill', '#69b3a2')
             .attr('y', d => height)
@@ -132,7 +136,7 @@ const object = {
 $(document).ready(async function () {
     const nBinInput = $('#nBin');
 
-    object.rawData = await d3.csv('/second-assignment/csv/geo_data_trees_list.csv');
+    object.rawData = await d3.csv('../csv/geo_data_trees_list.csv');
 
     $(window).resize(function () {
         if (currentWidth !== window.innerWidth) {

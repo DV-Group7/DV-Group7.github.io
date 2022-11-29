@@ -202,7 +202,7 @@ const object = {
             });
 
             randoms.forEach((random) => {
-                chart.selectAll('.' + sanitizeString(random))
+                chart.selectAll(`.${sanitizeString(random)}`)
                     .attr('width', 0)
                     .transition()
                     .duration(100)
@@ -243,7 +243,7 @@ const object = {
 };
 
 $(document).ready(async function () {
-    object.rawData = await d3.csv('/first-assignment/csv/geo_data_trees_neighborhoods.csv');
+    object.rawData = await d3.csv('../csv/geo_data_trees_neighborhoods.csv');
 
     // Disegno la lista delle circoscrizioni
     object.rawData.forEach((row, index) => {

@@ -1,0 +1,168 @@
+section {
+    float: left;
+}
+
+buttons.font-fira {
+    width: 800px;
+    float: left;
+    text-align: left;
+}
+
+.form-control {
+
+    font-size: 1.3rem;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}
+
+input[type="checkbox"] {
+
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.05em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+
+input[type="checkbox"]#Celtis::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    transform: scale(0);
+    background-color: #808000;
+}
+
+input[type="checkbox"]#Celtis:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]#Aesculus::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    transform: scale(0);
+    background-color: #9A6324;
+}
+
+input[type="checkbox"]#Aesculus:checked::before {
+    transform: scale(1);
+}
+
+
+input[type="checkbox"]#Carpinus::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    transform: scale(0);
+    background-color: #469990;
+}
+
+input[type="checkbox"]#Carpinus:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]#Cordata::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    transform: scale(0);
+    background-color: #000075;
+}
+
+input[type="checkbox"]#Cordata:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]#Platanus::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    transform: scale(0);
+    background-color: #e6194B;
+}
+
+input[type="checkbox"]#Platanus:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]#Europaea::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    transform: scale(0);
+    background-color: #f58231;
+}
+
+input[type="checkbox"]#Europaea:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]#Acer::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    transform: scale(0);
+    background-color: #ffe119;
+}
+
+input[type="checkbox"]#Acer:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]#Cupressus::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    transform: scale(0);
+    background-color: #911eb4;
+}
+
+input[type="checkbox"]#Cupressus:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]#Sophora::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    transform: scale(0);
+    background-color: #3cb44b;
+}
+
+input[type="checkbox"]#Sophora:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]#Prunus::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    transform: scale(0);
+    background-color: #42d4f4;
+}
+
+input[type="checkbox"]#Prunus:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]#Others::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    transform: scale(0);
+    background-color: #4363d8;
+}
+
+input[type="checkbox"]#Others:checked::before {
+    transform: scale(1);
+}

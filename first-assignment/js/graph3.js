@@ -157,7 +157,7 @@ const object = {
 };
 
 $(document).ready(async function () {
-    object.rawData = await d3.csv('/first-assignment/csv/geo_data_trees_neighborhoods.csv');
+    object.rawData = await d3.csv('../csv/geo_data_trees_neighborhoods.csv');
 
     $(window).resize(function () {
         if (currentWidth !== window.innerWidth) {
