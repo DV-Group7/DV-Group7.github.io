@@ -23,7 +23,7 @@ function drawCharts(value, margin, width, height) {
     , "August", "September", "October", "November", "December"]
 
   // Read the data
-  d3.csv("../graph_3.csv").then(function (data) {
+  d3.csv("../csv/graph_3.csv").then(function (data) {
 
     //Auxiliary variables
     let a = 1;

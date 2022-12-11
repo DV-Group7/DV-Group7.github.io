@@ -12,7 +12,7 @@ $(document).ready(function () {
         .attr("margin", 0);
 
     // Load data
-    d3.csv("../graph_1.csv").then(function (data) {
+    d3.csv("../csv/graph_1.csv").then(function (data) {
 
         // Inizitialization array all data
         let values = new Array();
