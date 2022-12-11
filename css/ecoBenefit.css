@@ -41,6 +41,10 @@ li {
     margin-right: 16rem;
 }
 
+label {
+    font-family: "Fira Sans", sans-serif;
+}
+
 h1,
 h2,
 h3,

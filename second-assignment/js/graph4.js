@@ -56,7 +56,7 @@ const object = {
 
         // Add Y axis
         const y = d3.scaleLinear()
-            .domain([0, d3.max(data, d => +d.Carbon)])
+            .domain([0, 8000])
             .range([height, 0]);
 
         const yAxis = chart.append('g')
@@ -74,7 +74,7 @@ const object = {
 
         // Add X axis
         const x = d3.scaleLinear()
-            .domain([0, d3.max(data, d => +d.Height)])
+            .domain([0, 40])
             .range([0, width]);
 
         const xAxis = chart.append('g')

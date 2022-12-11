@@ -1,0 +1,15 @@
+svg {
+    display: block;
+    margin: auto;
+}
+
+.line {
+    fill: none;
+    stroke: #d2d2d2;
+}
+
+.line1 {
+    fill: none;
+    stroke: #d2d2d2;
+}
+

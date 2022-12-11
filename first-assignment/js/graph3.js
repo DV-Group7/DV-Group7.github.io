@@ -67,7 +67,7 @@ const object = {
 
         // Add X axis
         const x = d3.scaleLinear()
-            .domain([0, d3.max(data, d => d.Abundance)])
+            .domain([0, 3000])
             .range([0, width]);
 
         const xAxis = chart.append('g')
@@ -75,6 +75,16 @@ const object = {
             .attr('transform', `translate(0,${height})`)
             .call(d3.axisBottom(x).tickSizeOuter(0).ticks(3));
 
+        // Add X label
+        const xLabel = chart.append('g')
+            .attr('class', 'x-label')
+            .attr('font-size', '15');
+
+        xLabel.append('text')
+            .text('Abundance [unit]')
+            .attr("y", 410)
+            .attr("x", 50);
+            
         // Color palette
         const color = getTreeColors(subgroups);
 
