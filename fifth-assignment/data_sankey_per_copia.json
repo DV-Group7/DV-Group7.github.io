@@ -1,0 +1,39 @@
+{
+  "nodes": [
+    { "node": 0, "name": "Carbon storage", "Abundance": "100" },
+    { "node": 1, "name": "Celtis Australis", "Abundance": "19.7" },
+    { "node": 2, "name": "Aesculus hippocastanum", "Abundance": "11.2" },
+    { "node": 3, "name": "Carpinus betulus", "Abundance": "10.3" },
+    { "node": 4, "name": "Tilia cordata", "Abundance": "9.8" },
+    { "node": 5, "name": "Platanus x hispanica", "Abundance": "9.6" },
+    { "node": 6, "name": "Tilia x europaea", "Abundance": "9" },
+    { "node": 7, "name": "Acer campestre", "Abundance": "8.8" },
+    { "node": 8, "name": "Cupressus", "Abundance": "7.7" },
+    { "node": 9, "name": "Sophora japonica", "Abundance": "7.2" },
+    { "node": 10, "name": "Prunus cerasifera", "Abundance": "6.7" },
+    { "node": 11, "name": "Total annual benefits", "Abundance": "100" }
+  ],
+  "links": [
+    { "source": 0, "target": 1, "value": 2.8 },
+    { "source": 0, "target": 2, "value": 17.5 },
+    { "source": 0, "target": 3, "value": 2.51 },
+    { "source": 0, "target": 4, "value": 2.64 },
+    { "source": 0, "target": 5, "value": 43.34 },
+    { "source": 0, "target": 6, "value": 16.25 },
+    { "source": 0, "target": 7, "value": 1.47 },
+    { "source": 0, "target": 8, "value": 8 },
+    { "source": 0, "target": 9, "value": 3.22 },
+    { "source": 0, "target": 10, "value": 2.24 },
+
+    { "source": 1, "target": 11, "value": 14.9 },
+    { "source": 2, "target": 11, "value": 18.52 },
+    { "source": 3, "target": 11, "value": 4.49 },
+    { "source": 4, "target": 11, "value": 5.28 },
+    { "source": 5, "target": 11, "value": 24.9 },
+    { "source": 6, "target": 11, "value": 14.9 },
+    { "source": 7, "target": 11, "value": 2.22 },
+    { "source": 8, "target": 11, "value": 7 },
+    { "source": 9, "target": 11, "value": 5 },
+    { "source": 10, "target": 11, "value": 2.75 }
+  ]
+}

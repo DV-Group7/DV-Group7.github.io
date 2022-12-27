@@ -1,0 +1,39 @@
+{
+  "nodes": [
+    { "node": 0, "name": "Carbon storage", "Abundance": "2499496" },
+    { "node": 1, "name": "Celtis Australis", "Abundance": "1028" },
+    { "node": 2, "name": "Aesculus hippocastanum", "Abundance": "581" },
+    { "node": 3, "name": "Carpinus betulus", "Abundance": "536" },
+    { "node": 4, "name": "Tilia cordata", "Abundance": "509" },
+    { "node": 5, "name": "Platanus x hispanica", "Abundance": "502" },
+    { "node": 6, "name": "Tilia x europaea", "Abundance": "471" },
+    { "node": 7, "name": "Acer campestre", "Abundance": "458" },
+    { "node": 8, "name": "Cupressus", "Abundance": "399" },
+    { "node": 9, "name": "Sophora japonica", "Abundance": "376" },
+    { "node": 10, "name": "Prunus cerasifera", "Abundance": "350" },
+    { "node": 11, "name": "Total annual benefits", "Abundance": "11408" }
+  ],
+  "links": [
+    { "source": 0, "target": 1, "value": 19.7, "value2": 2.8, "value3": 70736},
+    { "source": 0, "target": 2, "value": 11.2, "value2": 17.5, "value3": 438610},
+    { "source": 0, "target": 3, "value": 10.3, "value2": 2.51, "value3": 62980 },
+    { "source": 0, "target": 4, "value": 9.8, "value2": 2.64 , "value3": 65967},
+    { "source": 0, "target": 5, "value": 9.6, "value2": 43.34 , "value3": 1083313 },
+    { "source": 0, "target": 6, "value": 9, "value2": 16.25 , "value3": 406394 },
+    { "source": 0, "target": 7, "value": 8.8, "value2": 1.47 , "value3": 36849 },
+    { "source": 0, "target": 8, "value": 7.7, "value2": 8 , "value3": 198211},
+    { "source": 0, "target": 9, "value": 7.2, "value2": 3.22, "value3": 80562 },
+    { "source": 0, "target": 10, "value": 6.7, "value2": 2.24 , "value3": 55874 },
+
+    { "source": 1, "target": 11, "value": 19.7, "value2": 14.9 , "value3": 1706 },
+    { "source": 2, "target": 11, "value": 11.2, "value2": 18.52 , "value3": 2113 },
+    { "source": 3, "target": 11, "value": 10.3, "value2": 4.49  , "value3": 512},
+    { "source": 4, "target": 11, "value": 9.8, "value2": 5.28  , "value3": 602},
+    { "source": 5, "target": 11, "value": 9.6, "value2": 24.9, "value3": 2845  },
+    { "source": 6, "target": 11, "value": 9, "value2": 14.9 , "value3": 1697 },
+    { "source": 7, "target": 11, "value": 8.8, "value2": 2.22, "value3": 254  },
+    { "source": 8, "target": 11, "value": 7.7, "value2": 7 , "value3": 800},
+    { "source": 9, "target": 11, "value": 7.2, "value2": 5 , "value3": 565 },
+    { "source": 10, "target": 11, "value": 6.7, "value2": 2.75 , "value3": 314 }
+  ]
+}
